@@ -1,9 +1,12 @@
 ![Supports amd64 Architecture][amd64-shield]
 ![Supports armv7 Architecture][armv7-shield]
-![Supports aarch64 Architecture][aarch64-shield]
+[Supports aarch64 Architecture][aarch64-shield]
 ![Supports armhf Architecture][armhf-shield]
 ![Supports i386 Architecture][i386-shield]
 ![Maintained][maintained-shield]
+
+2022-4-17 Forked and modding to see if I can get support for arm64 working to use in Home Assistant running on my Radxa Zero
+
 
 # No longer maintained
 

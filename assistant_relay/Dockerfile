@@ -14,16 +14,16 @@ RUN wget https://github.com/greghesp/assistant-relay/releases/download/v3.3.2b/r
 
 
 
-RUN \
-&& sed -i -e 's#./bin/config.json#/data/config.json#g' /assistant_relay/helpers/server.js \
+RUN  \
+sed -i -e 's#./bin/config.json#/data/config.json#g' /assistant_relay/helpers/server.js \
 && sed -i -e 's#./bin/config.json#/data/config.json#g' /assistant_relay/helpers/assistant.js \
 && sed -i -e 's#./bin/config.json#/data/config.json#g' /assistant_relay/helpers/auth.js \
 && sed -i -e 's#./bin/config.json#/data/config.json#g' /assistant_relay/routes/index.js \
 && sed -i -e 's#./bin/config.json#/data/config.json#g' /assistant_relay/routes/server.js \
 && sed -i -e 's#./bin/config.json#/data/config.json#g' /assistant_relay/bin/www \
 && sed -i -e 's#./bin/config.json#/data/config.json#g' /assistant_relay/routes/server.js
-RUN \
-&& sed -i -e 's#../bin/audio-responses/#/data/audio-responses/#g' /assistant_relay/helpers/server.js \
+RUN  \
+sed -i -e 's#../bin/audio-responses/#/data/audio-responses/#g' /assistant_relay/helpers/server.js \
 && sed -i -e 's#../bin/audio-responses/#/data/audio-responses/#g' /assistant_relay/routes/server.js \
 && sed -i -e 's#bin/audio-responses/#/data/audio-responses/#g' /assistant_relay/helpers/server.js
 
